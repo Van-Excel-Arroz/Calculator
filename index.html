@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Retro Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+				<div class="input">
+					<div class="prev-calc"></div>
+					<div class="curr-calc"></div>
+				</div>
+
+				<div class="btn-grid">
+					<button class="cyan-btn" onclick="clearNum()">C</button>
+					<button class="pink-btn" onclick="eraseCalc()">E</button>
+					<button class="pink-btn">?</button>
+					<button class="pink-btn" onclick="displayCalc('*')">*</button>
+					<button onclick="displayCalc('7')">7</button>
+					<button onclick="displayCalc('8')">8</button>
+					<button onclick="displayCalc('9')">9</button>
+					<button class="pink-btn" onclick="displayCalc('/')">/</button>
+					<button onclick="displayCalc('4')">4</button>
+					<button onclick="displayCalc('5')">5</button>
+					<button onclick="displayCalc('6')">6</button>
+					<button class="pink-btn" onclick="displayCalc('-')">-</button>
+					<button onclick="displayCalc('1')">1</button>
+					<button onclick="displayCalc('2')">2</button>
+					<button onclick="displayCalc('3')">3</button>
+					<button class="pink-btn" onclick="displayCalc('+')">+</button>
+					<button onclick="displayCalc('0')">0</button>
+					<button class="pink-btn" onclick="displayCalc('.')">.</button>
+					<button class="pink-btn" onclick="performCalc()">=</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
