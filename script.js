@@ -1,8 +1,10 @@
 const currCalc = document.querySelector('.curr-calc');
 const prevCalc = document.querySelector('.prev-calc');
 
+displayError = 'Error! :(';
+
 const displayCalc = val => {
-	if (currCalc.innerHTML === 'Error! :(') {
+	if (currCalc.innerHTML === displayError) {
 		currCalc.innerHTML = '';
 	}
 	currCalc.innerHTML += val;
@@ -14,6 +16,9 @@ const clearNum = () => {
 };
 
 const eraseCalc = () => {
+	if (currCalc.innerHTML === displayError) {
+		currCalc.innerHTML = '';
+	}
 	currCalc.innerHTML = currCalc.innerHTML.substring(0, currCalc.innerHTML.length - 1);
 	if (currCalc.innerHTML.trim() === '') {
 		currCalc.innerHTML = prevCalc.innerHTML;
@@ -23,10 +28,12 @@ const eraseCalc = () => {
 
 const performCalc = () => {
 	try {
-		prevCalc.innerHTML = currCalc.innerHTML;
-		currCalc.innerHTML = eval(currCalc.innerHTML);
+		if (currCalc.innerHTML !== '') {
+			prevCalc.innerHTML = currCalc.innerHTML;
+			currCalc.innerHTML = eval(currCalc.innerHTML);
+		}
 	} catch (err) {
-		currCalc.innerHTML = 'Error! :(';
+		currCalc.innerHTML = displayError;
 		prevCalc.innerHTML = '';
 	}
 };
