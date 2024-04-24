@@ -19,6 +19,11 @@ body {
 	position: relative;
 }
 
+.main-content {
+	display: flex;
+	width: 95%;
+}
+
 .top-nav {
 	position: sticky;
 	top: 0;
@@ -51,9 +56,39 @@ body {
 	cursor: pointer;
 }
 
+.left-side {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 1px solid black;
+	padding: 0 40px;
+}
+
+.left-side .pt1 {
+	font-size: 5rem;
+	margin-top: 2rem;
+}
+
+.left-side .section {
+	background-color: #b89b5d;
+	color: #fef7f1;
+	font-size: 4rem;
+	font-weight: 800;
+	padding: 10px 20px;
+	box-shadow: 16px 16px black;
+	margin: 0;
+}
+
+.rigth-side {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+}
+
 .card {
 	height: 550px;
-	width: 300px;
+	width: 400px;
 	border: 5px solid gray;
 	border-radius: 50px;
 	padding: 3rem 2rem;
