@@ -24,7 +24,7 @@
 						<p>Calculator</p>
 					</div>
 
-					<i class="fa-solid fa-bars hamburger-menu"> </i>
+					<i class="fa-solid fa-bars hamburger-menu" onclick="openSidePanel()"> </i>
 				</div>
 			</nav>
 
@@ -66,9 +66,12 @@
 				</div>
 			</main>
 		</div>
-		<div class="show-members">
-			<p>Members</p>
-			<ul>
+		<div class="show-members close-show-members">
+			<div class="header">
+				<p>Members</p>
+				<i class="fa-solid fa-xmark close-button" onclick="closeSidePanel()"></i>
+			</div>
+			<ul class="members-list">
 				<li>Aliliran</li>
 				<li>Arroz</li>
 				<li>Balunan</li>

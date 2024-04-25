@@ -37,3 +37,13 @@ const performCalc = () => {
 		prevCalc.innerHTML = '';
 	}
 };
+
+const sidePanel = document.querySelector('.show-members');
+
+const openSidePanel = () => {
+	sidePanel.classList.remove('close-show-members');
+};
+
+const closeSidePanel = () => {
+	sidePanel.classList.add('close-show-members');
+};
