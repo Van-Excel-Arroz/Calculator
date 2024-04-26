@@ -98,6 +98,11 @@ body {
 	cursor: pointer;
 }
 
+.members-list a {
+	text-decoration: none;
+	color: #fff;
+}
+
 .left-side {
 	flex: 1;
 	display: flex;
