@@ -8,6 +8,7 @@ body {
 	overflow: hidden;
 	color: #071013;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .container {
