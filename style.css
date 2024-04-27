@@ -227,4 +227,12 @@ button:active {
 		border-bottom: 1px solid black;
 		padding-bottom: 5rem;
 	}
+
+	.show-members {
+		width: 300px;
+	}
+
+	.show-members .members-list {
+		font-size: 1.4rem;
+	}
 }
