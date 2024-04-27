@@ -34,6 +34,7 @@ body {
 	width: 100%;
 	border-bottom: 1px solid black;
 	background-color: rgba(254, 247, 241, 0.95);
+	z-index: 1000;
 }
 
 .top-nav .content {
@@ -214,11 +215,11 @@ button:active {
 	}
 
 	.main-content .left-side .pt1 {
-		font-size: 4rem;
+		font-size: 3.4rem;
 	}
 
 	.main-content .left-side .section {
-		font-size: 3rem;
+		font-size: 2.1rem;
 	}
 
 	.main-content .left-side {
